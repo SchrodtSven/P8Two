@@ -26,12 +26,19 @@ Just another playground for testing new features of PHP8.2.x
 
 - see: https://wiki.php.net/rfc/readonly_classes
 - see: https://www.php.net/manual/en/language.oop5.basic.php#language.oop5.basic.class.readonly
-- see: <code>SchrodtSven\P8Two\Entity\BlogArticle</code> and test
+- see: <code>SchrodtSven\P8Two\Entity\BlogArticle</code> and <code>test/Entity/BlogArticleTest</code>
 
 
 ### Disjunctive Normal Form (DNF) Types 
 
 DNF types allow us to combine union and intersection types, following a strict rule: when combining union and intersection types, intersection types must be grouped with brackets. 
+<pre>
+<code>
+    public function foo(ClassA & InterfaceB) {}
+
+    public function foo((ClassB & InterfaceC) | null ) {} 
+</code>
+</pre>
 
 - see: <code>SchrodtSven\P8Two\Entity\PersonFactory</code> and <code>test/Entity/PersonFactoryTest</code>
 
