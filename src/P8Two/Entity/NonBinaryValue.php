@@ -6,8 +6,8 @@ declare(strict_types=1);
  * 
  * 
  * @author Sven Schrodt<sven@schrodt.club>
- * @link https://github.com/SchrodtSven/P8UnitCheck
- * @package P8UnitCheck
+ * @link https://github.com/SchrodtSven/P8Two
+ * @package P8Two
  * @version 0.1
  * @since 2023-04-27
  */

@@ -39,7 +39,7 @@ DNF types allow us to combine union and intersection types, following a strict r
 
 - see: <code>SchrodtSven\P8Two\Entity\NonBinaryValue</code> and <code>test/Entity/NonBinaryValueTest</code>
 
-###  Constants in traits RFC Doc
+###  Constants in traits
 
 You cannot access the constant through the name of the trait, but, you can access the constant through the class that uses the trait. 
 

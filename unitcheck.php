@@ -7,10 +7,10 @@ declare(strict_types=1);
  * wqithin each check case
  * 
  * @author Sven Schrodt<sven@schrodt.club>
- * @link https://github.com/SchrodtSven/P8UnitCheck
- * @package P8UnitCheck
+ * @link https://github.com/SchrodtSven/P8Two
+ * @package P8Two
  * @version 0.1
- * @since 2023-04-09
+ * @since 2023-04-27
  */
 
 if (version_compare(PHP_VERSION, '8.2.0', '<')) {
@@ -22,7 +22,7 @@ if (version_compare(PHP_VERSION, '8.2.0', '<')) {
 ini_set('assert.exception', 1);
 
 // register auto loading
-require_once 'src/P8UnitCheck/Autoload.php';
+require_once 'src/P8Two/Autoload.php';
 use P8UnitCheck\Kernel\Runner;
 use P8UnitCheck\Entity\Config;
 use P8UnitCheck\Shell\Parser; 
