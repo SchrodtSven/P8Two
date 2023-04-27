@@ -49,6 +49,24 @@ DNF types allow us to combine union and intersection types, following a strict r
 ###  Constants in traits
 
 You cannot access the constant through the name of the trait, but, you can access the constant through the class that uses the trait. 
+<pre>
+<code>
+ trait UserLandDeclaration 
+ {
+    public const OS = 'Darwin Kernel Version 22.4.0'; 
+ }
+ 
+ class User
+ {  
+    use UserLandDeclaration;
+     
+ }
+ echo UserLandDeclaration::OS;
+ // Fatal error: Uncaught Error: Cannot access trait constant UserLandDeclaration::OS directly
+ $user = new User();
+ echo $user::OS;
+</code>
+</pre>
 
 ### Deprecate dynamic properties
 

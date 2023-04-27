@@ -16,12 +16,20 @@ declare(strict_types=1);
  use SchrodtSven\P8Two\Type\StringClass;
  use SchrodtSven\P8Two\Type\ListClass;
 
- class User
+
+ trait UserLandDeclaration 
  {
-     public $name;
+    public const OS = 'Darwin Kernel Version 22.4.0'; 
  }
- 
+ class User
+ {  
+    use UserLandDeclaration;
+     
+ }
+ // echo UserLandDeclaration::OS;
+ // Fatal error: Uncaught Error: Cannot access trait constant UserLandDeclaration::OS directly
  $user = new User();
- $user->last_name = 'Doe';
+ echo $user::OS;
+ 
 
  
