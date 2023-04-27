@@ -35,6 +35,22 @@ DNF types allow us to combine union and intersection types, following a strict r
 
 - see: <code>SchrodtSven\P8Two\Entity\PersonFactory</code> and <code>test/Entity/PersonFactoryTest</code>
 
+### Allow null, false, and true as stand-alone types
+
+- see: <code>SchrodtSven\P8Two\Entity\NonBinaryValue</code> and <code>test/Entity/NonBinaryValueTest</code>
+
+###  Constants in traits RFC Doc
+
+You cannot access the constant through the name of the trait, but, you can access the constant through the class that uses the trait. 
+
+### Deprecate dynamic properties
+
+The creation of dynamic properties is deprecated to help avoid mistakes and typos, unless the class opts in by using the <code>#[\AllowDynamicProperties]</code> attribute. <code>\stdClass</code> still allows dynamic properties. (what else^?)
+
+Usage of the <code>__get</code>/<code>__set</code> magic methods is not affected by this change.
+
+- see: <code>test/MixedTest/::testDynamicCreationOfPropertiesDeprecation()</code>
+
 
 ## Appendix
 
