@@ -36,7 +36,7 @@ DNF types allow us to combine union and intersection types, following a strict r
 <code>
     public function foo(ClassA & InterfaceB) {}
 
-    public function foo((ClassB & InterfaceC) | null ) {} 
+    public function bar((ClassB & InterfaceC) | null ) {} 
 </code>
 </pre>
 
